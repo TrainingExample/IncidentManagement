@@ -67,14 +67,16 @@
 							$directory_name = 'download';
 							$dir = new DirectoryIterator($directory_name);
 							foreach ($dir as $fileinfo) {
-							    if ($fileinfo->isDir() && !$fileinfo->isDot()) {
-							        ?>
-						        	<form accept="<?php echo $_SERVER['REQUEST_URI'];?>" class="file_heading_button" method="POST">
-					        			<p><?php echo $fileinfo->getFilename(); ?></p> <input type="hidden" name="folder_name" value="<?php echo $fileinfo->getFilename(); ?>">
-					        			<input type="submit" name="submit" value="Select">
-					        		</form>
-							        <?php
-							    }
+								if (strpos($fileinfo, '__Microsoft Data Box Edge__') === false) {
+									if ($fileinfo->isDir() && !$fileinfo->isDot()) {
+										?>
+										<form accept="<?php echo $_SERVER['REQUEST_URI']; ?>" class="file_heading_button" method="POST">
+											<p><?php echo $fileinfo->getFilename(); ?></p> <input type="hidden" name="folder_name" value="<?php echo $fileinfo->getFilename(); ?>">
+											<input type="submit" name="submit" value="Select">
+										</form>
+										<?php
+									}
+								}
 							}
 						 ?>
 				</div>

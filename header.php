@@ -58,7 +58,7 @@
 				</div>
 			</div>
 			<div class="popup_section">
-				<div class="section_downloand section_downloand_2">
+				<div class="section_download section_download_2">
 					<div class="folder_button">
 						<h2>Select Incident</h2>
 						<p class="close">X</p>

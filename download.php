@@ -21,7 +21,7 @@
 	$project_name = str_replace('download/', '', $doc);
 ?>
 
-<div class="section_downloand">
+<div class="section_download">
 	<div class="folder_button">
 		<h2><?php echo $project_name; ?></h2>
 	</div>	

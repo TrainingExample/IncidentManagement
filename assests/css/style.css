@@ -109,7 +109,7 @@
 	height: 1px;
 	background-color: white;
 }
-.section_downloand{
+.section_download{
 	width: 100%;
 	max-width: 500px;
 	background-color: #e9e9e9;
@@ -118,7 +118,7 @@
 	overflow-y: auto;
 	height: 500px;
 }
-.section_downloand_2{
+.section_download_2{
 	margin: 130px auto;
 }
 .folder_button h2{

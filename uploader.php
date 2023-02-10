@@ -23,10 +23,10 @@ $file = "project.txt";
 $doc = file_get_contents($file);
 
 if ($doc === 'download') {
-  $file_upload = str_replace('download', '//fileserver/upload/', $doc);  
+  $file_upload = str_replace('download', '//dvm-tma-00133.microsoftdatabox.com/upload/', $doc);  
 }
 else{
-  $file_upload = str_replace('download/', '//fileserver/upload/', $doc);
+  $file_upload = str_replace('download/', '//dvm-tma-00133.microsoftdatabox.com/upload/', $doc);
 }
 
 $file_name = str_replace('download/', '', $doc);

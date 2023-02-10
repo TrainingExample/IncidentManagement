@@ -26,7 +26,7 @@
 		<h2><?php echo $project_name; ?></h2>
 	</div>	
 	<?php 
-		$directory_name = "\\\\fileserver\\download\\$project_name";
+		$directory_name = "\\\\dvm-tma-00133.microsoftdatabox.com\\incidents\\$project_name";
 		$scan = scandir($directory_name);
 		foreach($scan as $file) {
 		   if (!is_dir($directory_name."/$file")) {

@@ -26,13 +26,14 @@
 		<h2><?php echo $project_name; ?></h2>
 	</div>	
 	<?php 
-		$scan = scandir($directory);
+		$directory_name = "\\\\fileserver\\download\\$project_name";
+		$scan = scandir($directory_name);
 		foreach($scan as $file) {
-		   if (!is_dir($directory."/$file")) {
+		   if (!is_dir($directory_name."/$file")) {
 		    ?>
 		    	<div class="file_heading_button">
 		    		<p><?php echo "$file\n"; ?></p>
-		    		<a href="file.php?file=<?php echo $directory."/$file\n"; ?>">Download</a>
+		    		<a href="file.php?file=<?php echo $directory_name."/$file\n"; ?>">Download</a>
 		    	</div>
 		    <?php 
 		   }

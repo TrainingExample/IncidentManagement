@@ -64,7 +64,7 @@
 						<p class="close">X</p>
 					</div>	
 						<?php
-							$directory_name = 'download';
+							$directory_name = '\\\\fileserver\\download';
 							$dir = new DirectoryIterator($directory_name);
 							foreach ($dir as $fileinfo) {
 								if (strpos($fileinfo, '__Microsoft Data Box Edge__') === false) {

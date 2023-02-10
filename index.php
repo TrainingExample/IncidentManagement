@@ -30,7 +30,7 @@ include 'header.php';
 
 </div>
 
-<iframe src="download/<?php echo $project_name; ?>/daily_report.pdf" width="100%" height="600px">
+<iframe src="report/<?php echo $project_name; ?>/daily_report.pdf" width="100%" height="600px">
     </iframe>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>

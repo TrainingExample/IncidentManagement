@@ -25,7 +25,7 @@ include 'header.php';
 
 <div class="section_img">
 	<div class="img_pdf_1">
-		<img src="assests/img/header.png">
+		<img src="report/<?php echo $project_name; ?>/header_map.png">
 	</div>
 
 </div>
